@@ -1,0 +1,33 @@
+To solve the problem of determining whether two integers 
+𝑎
+a and 
+𝑏
+b form a "Oneful Pair" as defined by the condition 
+𝑎
++
+𝑏
++
+(
+𝑎
+⋅
+𝑏
+)
+=
+111
+a+b+(a⋅b)=111, you can simply perform the arithmetic directly based on the given inputs and check if the sum matches 111.
+
+Here's a Python script that achieves this:
+
+python
+
+# Read input
+a, b = map(int, input().split())
+
+# Calculate the sum
+sum_expression = a + b + (a * b)
+
+# Check if the sum equals 111
+if sum_expression == 111:
+    print("Yes")
+else:
+    print("No")
